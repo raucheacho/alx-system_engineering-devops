@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a1p | paste -sd', ' -
+ls -a1p | paste -sd',' - | sed 's/,/, /g'
