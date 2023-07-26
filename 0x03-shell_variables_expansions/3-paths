@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $PATH | tr -cd " " | wc -c | echo $(($(wc -c) + 1))
+echo $PATH | tr -cd ":" | echo $(( $(wc -c) + 1))
